@@ -37,7 +37,7 @@ public class TouristMgmtServiceImpl implements ITouristMgmtService {
 			return tourist.getTid()+" Tourist is updated";
 		}
 		else {
-			
+			throw new TouristNotFound(tourist.getTid()+"Tourist Not Found");
 		}
 	}
 
